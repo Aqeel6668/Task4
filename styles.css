@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: floralwhite;
+    color: #ECF0F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Music Player Container */
+.music-player {
+    background-color: #2C3E50;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+/* Album Art */
+.album-art img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Music Info */
+.music-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.music-info h3 {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #BDC3C7;
+}
+
+/* Progress Bar */
+.progress-container {
+    background-color: #1E1E1E;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+#current-time, #duration {
+    font-size: 0.8rem;
+    color: #BDC3C7;
+}
+
+#current-time {
+    float: left;
+}
+
+#duration {
+    float: right;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: #ECF0F1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.controls button:hover {
+    color: #1ABC9C;
+}
+
+/* Volume Control */
+.volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#volume {
+    width: 100px;
+    margin-left: 10px;
+}
+
+/* Playlist */
+.playlist {
+    margin-top: 20px;
+}
+
+.playlist h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.playlist li {
+    background-color: #34495E;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.playlist li:hover {
+    background-color: #1ABC9C;
+}
